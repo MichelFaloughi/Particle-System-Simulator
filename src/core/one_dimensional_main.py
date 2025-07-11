@@ -1,5 +1,5 @@
 # For now, we don't have epsilon, delta, alpha, etc. only mu
-from OneDimensionalParticleSystem import OneDimensionalParticleSystem
+from .one_dimensional_particle_system import OneDimensionalParticleSystem
 import pandas as pd
 
 WORLD_N = 25000

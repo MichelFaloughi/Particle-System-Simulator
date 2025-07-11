@@ -2,7 +2,10 @@
 import pygame
 import random
 import numpy as np
-from global_variables import global_possible_directions  # Ensure this file is available
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'utils'))
+from constants import global_possible_directions  # Ensure this file is available
 import math
 
 class ParticleSystem:
@@ -10,7 +13,7 @@ class ParticleSystem:
                  middle_cluster_size:int=-1,
                  num_iterations:int=None, init_refresh_rate:int=8, init_paused_status:bool=False,
                  init_one_step_mode:bool=False,
-                 world_title: str = 'Interactive Particle System', icon_file_path: str = 'kcl.png'):
+                 world_title: str = 'Interactive Particle System', icon_file_path: str = '../assets/images/kcl.png'):
         
         # Validations
         assert 0 <= mu <= 1 and 0 <= delta <= 1

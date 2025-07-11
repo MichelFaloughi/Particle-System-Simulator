@@ -2,9 +2,12 @@
 import pygame
 import random
 import numpy as np
-from global_variables import global_possible_directions # Ensure this file is available
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'utils'))
+from constants import global_possible_directions # Ensure this file is available
 import math
-from Particle import Particle
+from .particle import Particle
 import pandas as pd
 
 class ParticleSystem:
@@ -13,7 +16,7 @@ class ParticleSystem:
                  dot_size: int, middle_cluster_size:int=-1,
                  num_iterations:int=None, init_refresh_rate:int=8, init_paused_status:bool=False,
                  init_one_step_mode:bool=False, direction_weights:list=[0.25,0.25,0.25,0.25],
-                 world_title:str='Interactive Particle System', icon_file_path:str='kcl.png'):
+                 world_title:str='Interactive Particle System', icon_file_path:str='../assets/images/kcl.png'):
         
         # Validations
         assert 0 <= mu <= 1 and 0 <= delta <= 1
@@ -83,7 +86,7 @@ class ParticleSystem:
 
         self.id = self.read_and_increment_run_id(2) 
 
-        self.log_run(excel_path="ParticleSystem_database.xlsx") # log the run in the database
+        self.log_run(excel_path="../data/raw/ParticleSystem_database.xlsx") # log the run in the database
 
 
 
@@ -195,7 +198,7 @@ class ParticleSystem:
     def read_and_increment_run_id(self, line_number):
         assert line_number == 2, 'This is for 1D Particle Systems !'
 
-        file_path = "run_ids.txt"
+        file_path = "../data/raw/run_ids.txt"
 
         with open(file_path, "r") as file:
             lines = file.readlines()
@@ -217,7 +220,7 @@ class ParticleSystem:
         return first_part
 
     # This is the function that will write to the 'ParticleSystem_database.xlsx' 
-    def log_run(self, excel_path="ParticleSystem_database.xlsx"):
+    def log_run(self, excel_path="../data/raw/ParticleSystem_database.xlsx"):
 
         new_data = {
             "ID": [self.id],  

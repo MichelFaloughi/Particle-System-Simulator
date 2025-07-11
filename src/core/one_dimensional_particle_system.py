@@ -2,8 +2,11 @@
 import pygame
 import numpy as np
 import random
-from global_variables import one_dimensional_possible_directions
-from OneDimensionalParticle import OneDimensionalParticle
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'utils'))
+from constants import one_dimensional_possible_directions
+from .one_dimensional_particle import OneDimensionalParticle
 
 # Invariants:
 # - We will have screen_height / dot_size rows to be displayed
@@ -25,7 +28,7 @@ class OneDimensionalParticleSystem:
                  init_paused_status:bool=False, is_rendering:bool=True,
                  init_one_step_mode:bool=False,
                  world_title: str = 'One-Dimensional Interactive Particle System',
-                 icon_file_path: str = 'kcl.png' ):
+                 icon_file_path: str = '../assets/images/kcl.png' ):
         # Checkers
         assert 0 <= mu  <= 1, 'Mu aint no probability big boi'
 
@@ -382,7 +385,7 @@ class OneDimensionalParticleSystem:
     def read_and_increment_run_id(self, line_number):
         assert line_number == 1, 'This is for 2D Particle Systems !'
 
-        file_path = "run_ids.txt"
+        file_path = "../data/raw/run_ids.txt"
 
         with open(file_path, "r") as file:
             lines = file.readlines()

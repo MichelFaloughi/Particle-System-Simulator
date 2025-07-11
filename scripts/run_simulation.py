@@ -1,4 +1,8 @@
-from ParticleSystem import ParticleSystem
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+
+from core.particle_system import ParticleSystem
 import pandas as pd
 
 WORLD_WIDTH = 100 # 200 # 20
