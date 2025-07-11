@@ -12,10 +12,10 @@ MIDDLE_CLUSTER_SIZE = -1 # 10
 NUM_ITERATIONS =  10 ** 18 # None # 10000
 INIT_REFRESH_RATE = 150 # 100
 INIT_PAUSED_STATUS = False
-DIRECTION_WEIGHTS = [0.4, # right
-                     0.4, # down
-                     0.1, # left
-                     0.1  # up
+DIRECTION_WEIGHTS = [0, # right
+                     10, # down
+                     1, # left
+                     0  # up
                      ]
 
 running = True
