@@ -1,8 +1,8 @@
 from ParticleSystem import ParticleSystem
 import pandas as pd
 
-WORLD_WIDTH = 100 # 200 # 20
-WORLD_HEIGHT = 100 # 200 # 20
+WORLD_WIDTH = 150 # 200 # 20
+WORLD_HEIGHT = 150 # 200 # 20
 DELTA = 0.0001 # 0.001 # 0.01 # 0.1 # probability to change direction
 MU = 0.4 # density
 EPSILON = 0.9 # probability to just follow the nomral direction for one iteration (and not randomly move)
