@@ -1,7 +1,10 @@
 # This class is meant to represent one particle in our particle system
 import pygame
 import random
-from global_variables import global_possible_directions
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'utils'))
+from constants import global_possible_directions
 
 
 class Particle:

@@ -1,6 +1,9 @@
 import pygame
 import random 
-from global_variables import one_dimensional_possible_directions
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'utils'))
+from constants import one_dimensional_possible_directions
 
 class OneDimensionalParticle:
      
