@@ -1,6 +1,6 @@
 # Particle System Simulator
 
-An interactive lattice simulation for studying **active particle systems** — how self-propelled particles interacting through excluded volume spontaneously form clusters. Developed as a research project supervised by [Prof. Alexandre Stauffer](https://www.kcl.ac.uk/people/alexandre-stauffer) (King's College London).
+An interactive lattice simulation for studying **active particle systems** — how self-propelled particles interacting through excluded volume spontaneously form clusters. Developed as a research project supervised by [Prof. Alexandre Stauffer](https://www.kcl.ac.uk/people/alexandrestauffer) (King's College London).
 
 ![Simulation of an active particle system forming a cluster](https://github.com/user-attachments/assets/1eaee7a4-4dcd-4ca5-a856-07d9f6567ff3)
 
