@@ -35,7 +35,7 @@ class Particle:
 
 
         if self.active == False: # if the particle is not an active particle, assume epsilon = 1
-            # (ie particle will always randomly move, not sure if that epsilon = 1 or 0 actually, too lazy to check)
+            # (i.e. a passive particle performs a simple symmetric random walk)
             random_direction = random.choice(global_possible_directions)
             new_x = (self.x + random_direction[0]) % self.board.shape[0]
             new_y = (self.y + random_direction[1]) % self.board.shape[1]

@@ -24,7 +24,7 @@ class OneDimensionalParticleSystem:
                  dot_size:int, num_iterations:int, init_refresh_rate:int=8, 
                  init_paused_status:bool=False, is_rendering:bool=True,
                  world_title: str = 'One-Dimensional Interactive Particle System',
-                 icon_file_path: str = 'kcl.png' ):
+                 icon_file_path: str = 'assets/kcl.png' ):
         # Checkers
         assert 0 <= mu  <= 1, 'Mu aint no probability big boi'
 

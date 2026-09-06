@@ -13,7 +13,7 @@ class ParticleSystem:
                  dot_size: int, middle_cluster_size:int=-1,
                  num_iterations:int=None, init_refresh_rate:int=8, init_paused_status:bool=False,
                  init_one_step_mode:bool=False,
-                 world_title: str = 'Interactive Particle System', icon_file_path: str = 'kcl.png'):
+                 world_title: str = 'Interactive Particle System', icon_file_path: str = 'assets/kcl.png'):
         
         # Validations
         assert 0 <= mu <= 1 and 0 <= delta <= 1
