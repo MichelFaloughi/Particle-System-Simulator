@@ -2,6 +2,8 @@
 
 An interactive lattice simulation for studying **active particle systems** — how self-propelled particles interacting through excluded volume spontaneously form clusters. Developed as a research project supervised by [Prof. Alexandre Stauffer](https://www.kcl.ac.uk/people/alexandrestauffer) (King's College London).
 
+📄 **[Read the full project report (PDF)](report/Simulation_Study_of_Active_Particle_Systems.pdf)** — model definitions, clustering-time statistics, and analysis of metastable states.
+
 ![Simulation of an active particle system forming a cluster](https://github.com/user-attachments/assets/1eaee7a4-4dcd-4ca5-a856-07d9f6567ff3)
 
 ## The model
@@ -65,6 +67,7 @@ Model and world parameters (grid size, `mu`, `delta`, `epsilon`, `alpha`, …) a
 | `middle_experiment.py` | earlier experiment studying the stability of a seeded central cluster |
 | `main.ipynb` | parameter sweeps and plots (cluster cardinality over time, phase behavior) |
 | `global_variables.py` | shared constants (lattice directions) |
+| `report/` | the full project report (PDF) |
 
 ## Acknowledgements
 
