@@ -1,8 +1,8 @@
 # Particle System Simulator
 
-An interactive lattice simulation for studying **active particle systems** — how self-propelled particles interacting through excluded volume spontaneously form clusters. Developed as a research project supervised by [Prof. Alexandre Stauffer](https://www.kcl.ac.uk/people/alexandrestauffer) (King's College London).
+An interactive lattice simulation for studying **active particle systems**: how self-propelled particles interacting through excluded volume spontaneously form clusters. Developed as a research project supervised by [Prof. Alexandre Stauffer](https://www.kcl.ac.uk/people/alexandrestauffer) (King's College London).
 
-📄 **[Read the full project report (PDF)](report/Simulation_Study_of_Active_Particle_Systems.pdf)** — model definitions, clustering-time statistics, and analysis of metastable states.
+📄 **[Read the full project report (PDF)](report/Simulation_Study_of_Active_Particle_Systems.pdf)**: model definitions, clustering-time statistics, and analysis of metastable states.
 
 ![Simulation of an active particle system forming a cluster](https://github.com/user-attachments/assets/1eaee7a4-4dcd-4ca5-a856-07d9f6567ff3)
 
@@ -16,7 +16,7 @@ At every step, a randomly chosen particle attempts a move:
 - A **passive** particle performs a simple symmetric random walk.
 - A move succeeds only if the target site is empty (excluded volume / hard-core interaction).
 
-Despite these purely local rules, the system exhibits rich collective behavior: for suitable parameter regimes, active particles jam against one another and nucleate large, long-lived clusters — a lattice analogue of motility-induced phase separation.
+Despite these purely local rules, the system exhibits rich collective behavior: for suitable parameter regimes, active particles jam against one another and nucleate large, long-lived clusters, a lattice analogue of motility-induced phase separation.
 
 | Parameter | Meaning |
 |-----------|---------|
@@ -27,10 +27,10 @@ Despite these purely local rules, the system exhibits rich collective behavior: 
 
 ## Features
 
-- **Real-time visualization** with pygame — watch clusters nucleate, grow, and dissolve, with pause, single-step, and speed controls.
-- **Cluster statistics** — cluster cardinality via breadth-first search on the occupancy grid, Manhattan and Euclidean cluster radii, and ring-based occupancy measurements around the world center.
-- **Parameter sweep experiments** — scripts that vary the density `mu` and record the time for the system to reach a clustered state.
-- **One-dimensional variant** — a companion implementation of the model on a ring, with its own renderer.
+- **Real-time visualization** with pygame: watch clusters nucleate, grow, and dissolve, with pause, single-step, and speed controls.
+- **Cluster statistics**: cluster cardinality via breadth-first search on the occupancy grid, Manhattan and Euclidean cluster radii, and ring-based occupancy measurements around the world center.
+- **Parameter sweep experiments**: scripts that vary the density `mu` and record the time for the system to reach a clustered state.
+- **One-dimensional variant**: a companion implementation of the model on a ring, with its own renderer.
 
 ## Getting started
 
@@ -59,7 +59,7 @@ Model and world parameters (grid size, `mu`, `delta`, `epsilon`, `alpha`, …) a
 
 | File | Description |
 |------|-------------|
-| `Main.py` | entry point — runs the interactive 2D simulation |
+| `Main.py` | entry point; runs the interactive 2D simulation |
 | `ParticleSystem.py` | the 2D world: dynamics loop, rendering, and cluster statistics |
 | `Particle.py` | a single particle (active or passive) and its update rule |
 | `OneDimensionalMain.py`, `OneDimensionalParticleSystem.py`, `OneDimensionalParticle.py` | the 1D variant of the model |
